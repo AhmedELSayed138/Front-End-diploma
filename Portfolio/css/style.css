@@ -36,6 +36,9 @@ h6 {
     width: 85%;
     margin: 0 auto;
 }
+.grey-bg {
+    background-color: #F1F1F1;
+}
 
 
 /* Nav-bar */
@@ -45,6 +48,7 @@ nav {
     background-color: #555;
     border-radius: 1px;
     box-shadow: 5px 3px 5px 3px #00000047;
+    z-index: 3;
 }
 nav .container {
     display: flex;
@@ -171,9 +175,6 @@ nav h2 {
     display: flex;
     gap: 15px;
 }
-.about .btn {
-
-}
 .about .btns a {
     padding: 10px 20px;
     background-color: var(--red);
@@ -188,3 +189,89 @@ nav h2 {
     background-color: #EC2403;
 }
 
+/* Services Section */
+.services {
+    padding: 100px 0 54px;
+}
+.title {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+}
+.title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+}
+.title::before{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 160px;
+    height: 1px;
+    background-color: var(--red);
+    translate: -50% 0;
+    z-index: 1;
+}
+.title::after{
+    content: " ";
+    position:absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    border: solid var(--red);
+    border-width: 1px 0;
+    height: 10px;
+    width: 6%;
+    margin: 0 auto;
+}
+.services .services-cards {
+    display: flex;
+}       
+.card {
+    padding: 20px 20px;
+    text-align: center;
+    transition: background-color 500ms , box-shadow 500ms;
+    width: 25%;
+    border-radius: 5px;
+}
+.card:hover {
+    background-color: white;
+    box-shadow: 4px 4px 11px 1px #0000004d;
+}
+.card i {
+    color: var(--red);
+    font-size: 32px;
+    margin: 20px 0;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card p {
+    font-size: 16px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 100px 0 50px;
+}
+.portfolio-links {
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+} 
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-image {
+    padding: 25px;
+    width: 33.33%;
+}
+.portfolio-image img {
+    width: 100%;
+}
