@@ -1,0 +1,52 @@
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) { 
+    .about .container {
+        display: flex;
+        gap: 70px;
+        padding-top: 100px;
+        color: var(--text-color);
+    }
+    .about-image {
+        width: 1700px;
+    }
+    .offer .container {
+        flex-direction: row;
+    }
+    .offer-image {
+        width: 1800px;
+    }
+    .gallery-view {
+        display: flex;
+        justify-content: space-around;
+    }
+    .gallery-view .card {
+        width: 30%;
+    }
+    .footer .col {
+        width: 25%; 
+    }
+    .footer .container {
+        display: flex;
+    }
+    .contact .container {
+        display: flex;
+    }
+    .contact-content {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) { 
+
+}
+
+@media (min-width: 1400px) { 
+
+}
