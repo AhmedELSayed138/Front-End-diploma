@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <section class="home">
+        <div class="container">
+            <h1 class="text-center p-5">Ahmed ElSayed's Library</h1>
+            <div class="d-flex gap-4 ">
+                <div class="search w-100 ">
+                    <input type="search" oninput="SearchBook()" class="form-control"  id="searchInput" placeholder="Type to search...">
+                </div>
+                <button class="search-btn btn btn-primary"><a href="#data-input">Enter a new book</a></button>
+            </div>
+            <div id="gallery" class="gallery d-flex flex-wrap">
+                
+            </div>
+        </div>
+    </section>
+    <section id="data-input" class="data-input">
+        <div class="container">
+            <h2 class="h5 pt-5 pb-2">Please Enter your Book Data!</h2>
+            <form>
+                <div class="form-floating mb-3">
+                    <input oninput="validate(nameInput, nameRegex)" type="text" class="form-control" id="nameInput" placeholder="name@example.com">
+                    <label for="nameInput">Book's Name</label>
+                </div>  
+                <div class="form-floating mb-3">
+                    <input oninput="validate(autherInput, nameRegex)" type="text" class="form-control" id="autherInput" placeholder="name@example.com">
+                    <label for="autherInput">Auther's Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input oninput="validate(priceInput, priceRegex)" type="text" class="form-control" id="priceInput" placeholder="name@example.com">
+                    <label for="priceInput">Book's Price</label>
+                </div>    
+                <div class="form-floating mb-3">
+                    <input oninput="validate(categoryInput, categoryRegex)" type="text" class="form-control" id="categoryInput" placeholder="name@example.com">
+                    <label for="categoryInput">Book's Category</label>
+                </div>  
+                <div class="form-floating mb-3">
+                    <textarea oninput="validate(descriptionInput, descriptionRegex)"  class="form-control" id="descriptionInput" placeholder="name@example.com"></textarea>
+                    <label for="descriptionInput">Book's Description</label>
+                </div>  
+                <div class="form-floating mb-3">
+                    <input oninput="validate(rateInput, rateRegex)" type="number" class="form-control" id="rateInput" placeholder="name@example.com">
+                    <label for="rateInput">Book's stars number</label>
+                </div>  
+                <button type="button" onclick="addBook()" class="btn btn-primary">ADD BOOK</button>
+            </form>
+            
+        </div>
+    </section>    
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
+

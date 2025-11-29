@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.home {
+    min-height: 100vh;
+    background: url(../imgs/books-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.data-input {
+    min-height: 100vh;
+    background-color: #333;
+}
+.Card {
+    width: 33%;
+    background-color: transparent;
+}
+#stars {
+    color: yellow;
+}
+.dollar {
+    color: green;
+}
+.data-input h2 {
+    color: white;
+}
+.search-btn {
+    width: fit-content;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
